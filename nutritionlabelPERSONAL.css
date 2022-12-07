@@ -1,0 +1,753 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Berkshire Swash', cursive;
+    background-image: url(Images/Background.png);
+    background-size: cover;
+    /* color: rgb(159, 119, 159); */
+    overflow: hidden;
+}
+
+header h1 {
+   /*  color: rgb(86, 40, 86); */
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px
+}
+
+p {
+    /*     font-family: 'IBM Plex Serif', serif; */
+    /* CHEQUEAR LA FONT */
+    margin: 0;
+}
+
+/* START Ice Cream Frames */
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 420px;
+    margin-top: 170px;
+    margin-left: 50px;
+}
+
+.ice-cream {
+    width: 210px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.acid {
+    background-image: url(Images/AcidFrame.png);
+    background-size: cover;
+}
+
+.crunchy {
+    background-image: url(Images/CrunchyFrame.png);
+    background-size: cover;
+}
+
+.sticky {
+    background-image: url(Images/StickyFrame.png);
+    background-size: cover;
+}
+
+.sweet {
+    background-image: url(Images/SweetFrame.png);
+    background-size: cover;
+}
+
+.refreshing {
+    background-image: url(Images/RefreshingFrame.png);
+    background-size: cover;
+}
+
+/* END Ice Cream Frames */
+/* START Ice Cream Images */
+
+.acid-image {
+    background-image: url(Images/AcidBase.png);
+    margin-left: -15px;
+}
+
+.crunchy-image {
+    background-image: url(Images/CrunchyBase.png);
+}
+
+.sticky-image {
+    background-image: url(Images/StickyBase.png);
+}
+
+.sweet-image {
+    background-image: url(Images/SweetBase.png);
+}
+
+.refreshing-image {
+    background-image: url(Images/RefreshingBase.png);
+}
+
+.food-image {
+    background-size: cover;
+    margin-top: 50px;
+    height: 180px;
+    width: 110px;
+    margin-right: 20px;
+}
+
+/* END Ice Cream Images */
+/* START Radio Buttons */
+
+input[type="radio"] {
+    cursor: pointer;
+    opacity: 0;
+}
+
+#acid-button {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 100px;
+    height: 200px;
+}
+
+#crunchy-button {
+    position: absolute;
+    top: 300px;
+    left: 325px;
+    width: 100px;
+    height: 200px;
+}
+
+#sticky-button {
+    position: absolute;
+    top: 300px;
+    left: 535px;
+    width: 100px;
+    height: 200px;
+}
+
+#sweet-button {
+    position: absolute;
+    top: 300px;
+    left: 740px;
+    width: 100px;
+    height: 200px;
+}
+
+#refreshing-button {
+    position: absolute;
+    top: 300px;
+    left: 950px;
+    width: 100px;
+    height: 200px;
+}
+
+#acid-button:hover~* .acid-image,
+#crunchy-button:hover~* .crunchy-image,
+#sticky-button:hover~* .sticky-image,
+#sweet-button:hover~* .sweet-image,
+#refreshing-button:hover~* .refreshing-image {
+    animation: float 0.8s infinite alternate;
+}
+
+/* ACID */
+
+#acid-button:hover~* .acid-image {
+    background-image: url(Images/AcidSelection.png);
+    transition: all 1s;
+}
+
+#acid-button:hover~* .label01 {
+    opacity: 1;
+    transition: all 1s;
+}
+
+#acid-button:not(:hover)~* .label01 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+#acid-button:hover~* .crunchy,
+#acid-button:hover~* .sticky,
+#acid-button:hover~* .sweet,
+#acid-button:hover~* .refreshing {
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+#acid-button:not(:hover)~* .acid,
+#acid-button:not(:hover)~* .crunchy,
+#acid-button:not(:hover)~* .sticky,
+#acid-button:not(:hover)~* .sweet,
+#acid-button:not(:hover)~* .refreshing {
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* CRUNCHY */
+
+#crunchy-button:hover~* .crunchy-image {
+    background-image: url(Images/CrunchySelection.png);
+    transition: all 1s;
+}
+
+#crunchy-button:hover~* .label02 {
+    opacity: 1;
+    transition: all 1s;
+}
+
+#crunchy-button:not(:hover)~* .label02 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+#crunchy-button:hover~* .acid,
+#crunchy-button:hover~* .sticky,
+#crunchy-button:hover~* .sweet,
+#crunchy-button:hover~* .refreshing {
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+/* STICKY */
+
+#sticky-button:hover~* .sticky-image {
+    background-image: url(Images/StickySelection.png);
+}
+
+#sticky-button:hover~* .label03 {
+    opacity: 1;
+    transition: all 1s;
+}
+
+#sticky-button:not(:hover)~* .label03 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+#sticky-button:hover~* .acid,
+#sticky-button:hover~* .crunchy,
+#sticky-button:hover~* .sweet,
+#sticky-button:hover~* .refreshing {
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+/* SWEET */
+
+#sweet-button:hover~* .sweet-image {
+    background-image: url(Images/SweetSelection.png);
+}
+
+#sweet-button:hover~* .label04 {
+    opacity: 1;
+    transition: all 1s;
+}
+
+#sweet-button:not(:hover)~* .label04 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+#sweet-button:hover~* .crunchy,
+#sweet-button:hover~* .sticky,
+#sweet-button:hover~* .acid,
+#sweet-button:hover~* .refreshing {
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+/* REFRESHING */
+
+#refreshing-button:hover~* .refreshing-image {
+    background-image: url(Images/RefreshingSelection.png);
+}
+
+#refreshing-button:hover~* .label05 {
+    opacity: 1;
+    transition: all 1s;
+}
+
+#refreshing-button:not(:hover)~* .label05 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+#refreshing-button:hover~* .crunchy,
+#refreshing-button:hover~* .sticky,
+#refreshing-button:hover~* .acid,
+#refreshing-button:hover~* .sweet {
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+/* Animations */
+
+@keyframes float {
+    from {
+        margin-top: 50px;
+    }
+
+    to {
+        margin-top: 80px;
+    }
+}
+
+/* Label */
+
+.original {
+    color: white;
+    text-shadow: 0px 0px 14px #df2cff;
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    left: 1230px;
+    top: 250px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.label01,
+.label02,
+.label03,
+.label04,
+.label05 {
+    opacity: 0;
+}
+
+/* START Label 01 */
+
+.label01 header h1 {
+    color: #606647;
+}
+
+.label01 div h1 {
+    color: #c1a569;
+}
+
+.label01 .lg,
+.label01 .md {
+    background-color: #CBD5A4;
+}
+
+body .label01 {
+    color: #8c946d;
+}
+
+/* END Label 01 */
+/* START Label 02 */
+
+.label02 header h1 {
+    color: rgb(56, 12, 126);
+}
+
+.label02 div h1 {
+    color: #be98c0;
+}
+
+.label02 .lg,
+.label02 .md {
+    background-color: #8DEEB7;
+}
+
+body .label02 {
+    color: #769681;
+}
+
+/* END Label 02 */
+/* START Label 03 */
+
+.label03 header h1 {
+    color: rgb(86, 40, 86);
+}
+
+.label03 div h1 {
+    color: rgb(146, 78, 146);
+}
+
+.label03 .lg,
+.label03 .md {
+    background-color: #CBB8EE;
+}
+
+body .label03 {
+    color: rgb(159, 119, 159);
+}
+
+/* END Label 03 */
+/* START Label 04 */
+
+.label04 header h1 {
+    color: rgb(99, 175, 201);
+}
+
+.label04 div h1 {
+    color: rgb(221, 172, 221);
+}
+
+.label04 .lg,
+.label04 .md {
+    background-color: #fffec6;
+}
+
+body .label04 {
+    color: rgb(163, 50, 129);
+}
+
+/* END Label 04 */
+/* START Label 05 */
+
+.label05 header h1 {
+    color: rgb(86, 113, 155);
+}
+
+.label05 div h1 {
+    color: rgb(208, 96, 208);
+}
+
+.label05 .lg,
+.label05 .md {
+    background-color: #b8e7ee;
+}
+
+body .label05 {
+    color: rgb(119, 156, 159);
+}
+
+/* END Label 05 */
+
+.label {
+    position: absolute;
+    margin-left: 1150px;
+    margin-top: -460px;
+    background-color: white;
+    border: 4px solid #bebebe;
+    width: 270px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.divider {
+    border-bottom: 1px dashed #bcbcbc;
+    margin: 2px 0;
+    clear: right;
+  }
+
+.bold {
+    font-weight: 800;
+}
+
+.right {
+    float: right;
+}
+
+.lg {
+    height: 10px;
+}
+
+.lg,
+.md {
+    border-radius: 5px;
+    border: 0;
+}
+
+.md {
+    height: 5px;
+}
+
+.sm-text {
+    font-size: 0.85rem;
+}
+
+.calories-info h1 {
+    margin: -5px -2px;
+    overflow: hidden;
+}
+
+.calories-info span {
+    font-size: 1.2em;
+    margin-top: -7px;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.dbl-indent {
+    margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0px;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0px 8px;
+    text-indent: -8px;
+}
+
+/* Candy Tooth */
+.candy-logo {
+    width: 100%;
+    background-size: cover;
+    z-index: 3;
+}
+
+/*Dripping CSS*/
+.drip-wrapper {
+    border: 0px solid #ffc217;
+    filter: url("#goo");
+    height: 100VH;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    left: auto;
+    z-index: -1;
+}
+
+.drip-wrapper .drip-bottom {
+    border-radius: 10%;
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    background: white;
+}
+
+.drip-wrapper .drip {
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 35px;
+    background: white;
+    transform: translate(0, 0) scale(2);
+    animation: drip-1 cubic-bezier(0.66, 0.1, 0.97, 0.36) 3s infinite;
+
+}
+
+.drip-wrapper .drip:nth-child(1) {
+    animation-name: drip-1;
+    animation-delay: 1.25s;
+    left: 5%;
+    top: -29%;
+}
+
+.drip-wrapper .drip:nth-child(2) {
+    animation-name: drip-2;
+    animation-delay: 0.5s;
+    left: 10%;
+    top: -20%;
+}
+
+.drip-wrapper .drip:nth-child(3) {
+    animation-name: drip-3;
+    animation-delay: 2s;
+    left: 20%;
+    top: -25%;
+}
+
+.drip-wrapper .drip:nth-child(4) {
+    animation-name: drip-4;
+    animation-delay: 1s;
+    left: 30%;
+    top: -25%;
+}
+
+.drip-wrapper .drip:nth-child(5) {
+    animation-name: drip-5;
+    animation-delay: 1.75s;
+    left: 50%;
+    height: 75px;
+    width: 50px;
+    top: -20%;
+}
+
+.drip-wrapper .drip:nth-child(6) {
+    animation-name: drip-1;
+    animation-delay: 2.25s;
+    left: 60%;
+    top: -20%;
+}
+
+.drip-wrapper .drip:nth-child(7) {
+    animation-name: drip-2;
+    animation-delay: 1.5s;
+    left: 75%;
+    top: -20%;
+    height: 50px;
+    width: 30px;
+}
+
+.drip-wrapper .drip:nth-child(8) {
+    animation-name: drip-3;
+    animation-delay: 1s;
+    left: 90%;
+    top: -25%;
+}
+
+.drip-wrapper .drip:nth-child(9) {
+    animation-name: drip-4;
+    animation-delay: 0.75s;
+    left: 100%;
+    top: -25%;
+}
+
+.drip-wrapper .drip:nth-child(10) {
+    animation-name: drip-5;
+    animation-delay: 2.5s;
+    left: 50%;
+    top: -20%;
+    height: 50px;
+    width: 40px;
+}
+
+.drip-wrapper .drip:nth-child(11) {
+    animation-name: drip-5;
+    animation-delay: 0.25s;
+    left: -20%;
+    top: -20%;
+}
+
+@keyframes drip-1 {
+    to {
+        transform: translateY(500px) scale(0);
+    }
+}
+
+@keyframes drip-2 {
+    to {
+        transform: translateY(800px) scale(0);
+    }
+}
+
+@keyframes drip-3 {
+    to {
+        transform: translateY(600px) scale(0);
+    }
+}
+
+@keyframes drip-4 {
+    to {
+        transform: translateY(500px) scale(0.4);
+    }
+}
+
+@keyframes drip-5 {
+    to {
+        transform: translateY(400px) scale(0.2);
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        background: #e8630a;
+    }
+
+    10% {
+        background: #EA3281;
+    }
+
+    20% {
+        background: #E71669;
+    }
+
+    30% {
+        background: #661BAC;
+    }
+
+    40% {
+        background: #FDC600;
+    }
+
+    50% {
+        background: #75AC25;
+    }
+
+    60% {
+        background: #3283B5;
+    }
+
+    70% {
+        background: #0A5D9A;
+    }
+
+    80% {
+        background: #232F37;
+    }
+
+    90% {
+        background: #1B2735;
+    }
+
+    100% {
+        background: #090a0f;
+    }
+}
+
+@-webkit-keyframes colorchange
+
+/* Safari and Chrome - necessary duplicate */
+    {
+    0% {
+        background: #e8630a;
+    }
+
+    10% {
+        background: #EA3281;
+    }
+
+    20% {
+        background: #E71669;
+    }
+
+    30% {
+        background: #661BAC;
+    }
+
+    40% {
+        background: #FDC600;
+    }
+
+    50% {
+        background: #75AC25;
+    }
+
+    60% {
+        background: #3283B5;
+    }
+
+    70% {
+        background: #0A5D9A;
+    }
+
+    80% {
+        background: #232F37;
+    }
+
+    90% {
+        background: #1B2735;
+    }
+
+    100% {
+        background: #090a0f;
+    }
+}

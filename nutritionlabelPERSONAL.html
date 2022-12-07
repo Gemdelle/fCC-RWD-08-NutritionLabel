@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrition Label</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="./nutritionlabelPERSONAL.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alice&family=Berkshire+Swash&family=Delius&family=EB+Garamond&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=IBM+Plex+Serif&family=IM+Fell+English+SC&family=Julius+Sans+One&family=La+Belle+Aurore&family=Lemonada&family=Macondo&family=Old+Standard+TT:ital@0;1&family=Pinyon+Script&family=Rubik+Marker+Hatch&family=Rubik+Microbe&family=Satisfy&family=Tangerine&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Dripping -->
+    <div class="drip-wrapper">
+        <div class="drip-top">
+            <img class="candy-logo" src="Images/Header.png" />
+        </div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip-bottom"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+
+    <input type="radio" name="" id="acid-button">
+    <input type="radio" name="" id="crunchy-button">
+    <input type="radio" name="" id="sticky-button">
+    <input type="radio" name="" id="sweet-button">
+    <input type="radio" name="" id="refreshing-button">
+
+    <div class="container">
+        <div class="ice-cream acid">
+            <div class="food-image acid-image"></div>
+        </div>
+        <div class="ice-cream crunchy">
+            <div class="food-image crunchy-image"></div>
+        </div>
+        <div class="ice-cream sticky">
+            <div class="food-image sticky-image"></div>
+        </div>
+        <div class="ice-cream sweet">
+            <div class="food-image sweet-image"></div>
+        </div>
+        <div class="ice-cream refreshing">
+            <div class="food-image refreshing-image"></div>
+        </div>
+    </div>
+
+    <div class="labels">
+        <!-- Nutrition Label ACID -->
+        <div class="original">Hover through the Ice Creams to view their Nutrition Facts!</div>
+        <div class="label label01">
+            <header>
+                <h1 class="bold">Nutrition Facts</h1>
+                <div class="divider"></div>
+                <p>8 servings per container</p>
+                <p class="bold">Serving size <span class="right">Scoop of Ice Cream</span></p>
+            </header>
+            <div class="divider lg"></div>
+            <div class="calories-info">
+                <p class="bold sm-text">Amount per serving</p>
+                <h1>Calories <span class="right">230</span></h1>
+            </div>
+            <div class="divider md"></div>
+            <div class="daily-value sm-text">
+                <p class="right bold no-divider">% Daily Value *</p>
+                <div class="divider"></div>
+                <p><span class="bold">Total Fat</span> 8g <span class="bold right">10%</span></p>
+                <p class="indent no-divider">Saturated Fat 1g <span class="bold right">5%</span></p>
+                <div class="divider"></div>
+                <p class="indent no-divider"><i>Trans</i> Fat 0g</p>
+                <div class="divider"></div>
+                <p><span class="bold">Cholesterol</span> 0mg <span class="right bold">0%</span></p>
+                <p><span class="bold">Sodium</span> 160mg <span class="right bold">7%</span></p>
+                <p><span class="bold">Total Carbohydrate</span> 37g <span class="right bold">13%</span></p>
+                <p class="indent no-divider">Dietary Fiber 4g</p>
+                <div class="divider"></div>
+                <p class="indent no-divider">Total Sugars 12g</p>
+                <div class="divider dbl-indent"></div>
+                <p class="dbl-indent no-divider">Includes 10g Added Sugars <span class="right bold">20%</span>
+                <div class="divider"></div>
+                <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+                <div class="divider lg"></div>
+                <p>Vitamin D 2mcg <span class="right">10%</span></p>
+                <p>Calcium 260mg <span class="right">20%</span></p>
+                <p>Iron 8mg <span class="right">45%</span></p>
+                <p class="no-divider">Potassium 235mg <span class="right">6%</span></p>
+            </div>
+            <div class="divider md"></div>
+            <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a
+                daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+        </div>
+
+        <!-- Nutrition Label CRUNCHY -->
+        <div class="label label02">
+            <header>
+                <h1 class="bold">Nutrition Facts</h1>
+                <div class="divider"></div>
+                <p>8 servings per container</p>
+                <p class="bold">Serving size <span class="right">Scoop of Ice Cream</span></p>
+            </header>
+            <div class="divider lg"></div>
+            <div class="calories-info">
+                <p class="bold sm-text">Amount per serving</p>
+                <h1>Calories <span class="right">310</span></h1>
+            </div>
+            <div class="divider md"></div>
+            <div class="daily-value sm-text">
+                <p class="right bold no-divider">% Daily Value *</p>
+                <div class="divider"></div>
+                <p><span class="bold">Total Fat</span> 8g<span class="bold right">10%</span></p>
+                <p class="indent no-divider">Saturated Fat 1g <span class="bold right">5%</span></p>
+                <div class="divider"></div>
+                <p class="indent no-divider"><i>Trans</i> Fat 0g</p>
+                <div class="divider"></div>
+                <p><span class="bold">Cholesterol</span> 0mg <span class="right bold">0%</span></p>
+                <p><span class="bold">Sodium</span> 160mg <span class="right bold">7%</span></p>
+                <p><span class="bold">Total Carbohydrate</span> 37g <span class="right bold">13%</span></p>
+                <p class="indent no-divider">Dietary Fiber 4g</p>
+                <div class="divider"></div>
+                <p class="indent no-divider">Total Sugars 12g</p>
+                <div class="divider dbl-indent"></div>
+                <p class="dbl-indent no-divider">Includes 10g Added Sugars <span class="bold right">20%</span></p>
+                <div class="divider dbl-indent"></div>
+                <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+                <div class="divider lg"></div>
+                <p class="no-divider">Vitamin D 2mcg <span class="right">10%</span></p>
+                <p>Calcium 260mg <span class="right">20%</span></p>
+                <p>Iron 8mg <span class="right">45%</span></p>
+                <p class="no-divider">Potassium 235mg <span class="right">6%</span></p>
+                <div class="divider md"></div>
+                <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes
+                    to a
+                    daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+            </div>
+        </div>
+
+        <!-- Nutrition Label STICKY -->
+        <div class="label label03">
+            <header>
+                <h1 class="bold">Nutrition Facts</h1>
+                <div class="divider"></div>
+                <p>8 servings per container</p>
+                <p class="bold">Serving size <span class="right">Scoop of Ice Cream</span></p>
+            </header>
+            <div class="divider lg"></div>
+            <div class="calories-info">
+                <p class="bold sm-text">Amount per serving</p>
+                <h1>Calories <span class="right">360</span></h1>
+            </div>
+            <div class="divider md"></div>
+            <div class="daily-value sm-text">
+                <p class="right bold no-divider">% Daily Value *</p>
+                <div class="divider"></div>
+                <p><span class="bold">Total Fat</span> 8g<span class="bold right">10%</span></p>
+                <p class="indent no-divider">Saturated Fat 1g <span class="bold right">5%</span></p>
+                <div class="divider"></div>
+                <p class="indent no-divider"><i>Trans</i> Fat 0g</p>
+                <div class="divider"></div>
+                <p><span class="bold">Cholesterol</span> 0mg <span class="right bold">0%</span></p>
+                <p><span class="bold">Sodium</span> 160mg <span class="right bold">7%</span></p>
+                <p><span class="bold">Total Carbohydrate</span> 37g <span class="right bold">13%</span></p>
+                <p class="indent no-divider">Dietary Fiber 4g</p>
+                <div class="divider"></div>
+                <p class="indent no-divider">Total Sugars 12g</p>
+                <div class="divider dbl-indent"></div>
+                <p class="dbl-indent no-divider">Includes 10g Added Sugars <span class="bold right">20%</span></p>
+                <div class="divider dbl-indent"></div>
+                <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+                <div class="divider lg"></div>
+                <p class="no-divider">Vitamin D 2mcg <span class="right">10%</span></p>
+                <p>Calcium 260mg <span class="right">20%</span></p>
+                <p>Iron 8mg <span class="right">45%</span></p>
+                <p class="no-divider">Potassium 235mg <span class="right">6%</span></p>
+                <div class="divider md"></div>
+                <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food
+                    contributes
+                    to a
+                    daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+            </div>
+        </div>
+
+        <!-- Nutrition Label SWEET -->
+        <div class="label label04">
+            <header>
+                <h1 class="bold">Nutrition Facts</h1>
+                <div class="divider"></div>
+                <p>8 servings per container</p>
+                <p class="bold">Serving size <span class="right">Scoop of Ice Cream</span></p>
+            </header>
+            <div class="divider lg"></div>
+            <div class="calories-info">
+                <p class="bold sm-text">Amount per serving</p>
+                <h1>Calories <span class="right">385</span></h1>
+            </div>
+            <div class="divider md"></div>
+            <div class="daily-value sm-text">
+                <p class="right bold no-divider">% Daily Value *</p>
+                <div class="divider"></div>
+                <p><span class="bold">Total Fat</span> 8g<span class="bold right">10%</span></p>
+                <p class="indent no-divider">Saturated Fat 1g <span class="bold right">5%</span></p>
+                <div class="divider"></div>
+                <p class="indent no-divider"><i>Trans</i> Fat 0g</p>
+                <div class="divider"></div>
+                <p><span class="bold">Cholesterol</span> 0mg <span class="right bold">0%</span></p>
+                <p><span class="bold">Sodium</span> 160mg <span class="right bold">7%</span></p>
+                <p><span class="bold">Total Carbohydrate</span> 37g <span class="right bold">13%</span></p>
+                <p class="indent no-divider">Dietary Fiber 4g</p>
+                <div class="divider"></div>
+                <p class="indent no-divider">Total Sugars 12g</p>
+                <div class="divider dbl-indent"></div>
+                <p class="dbl-indent no-divider">Includes 10g Added Sugars <span class="bold right">20%</span>
+                </p>
+                <div class="divider dbl-indent"></div>
+                <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+                <div class="divider lg"></div>
+                <p class="no-divider">Vitamin D 2mcg <span class="right">10%</span></p>
+                <p>Calcium 260mg <span class="right">20%</span></p>
+                <p>Iron 8mg <span class="right">45%</span></p>
+                <p class="no-divider">Potassium 235mg <span class="right">6%</span></p>
+                <div class="divider md"></div>
+                <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food
+                    contributes
+                    to a
+                    daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+            </div>
+        </div>
+
+        <!-- Nutrition Label REFRESHING -->
+        <div class="label label05">
+            <header>
+                <h1 class="bold">Nutrition Facts</h1>
+                <div class="divider"></div>
+                <p>8 servings per container</p>
+                <p class="bold">Serving size <span class="right">Scoop of Ice Cream</span></p>
+            </header>
+            <div class="divider lg"></div>
+            <div class="calories-info">
+                <p class="bold sm-text">Amount per serving</p>
+                <h1>Calories <span class="right">280</span></h1>
+            </div>
+            <div class="divider md"></div>
+            <div class="daily-value sm-text">
+                <p class="right bold no-divider">% Daily Value *</p>
+                <div class="divider"></div>
+                <p><span class="bold">Total Fat</span> 8g<span class="bold right">10%</span></p>
+                <p class="indent no-divider">Saturated Fat 1g <span class="bold right">5%</span></p>
+                <div class="divider"></div>
+                <p class="indent no-divider"><i>Trans</i> Fat 0g</p>
+                <div class="divider"></div>
+                <p><span class="bold">Cholesterol</span> 0mg <span class="right bold">0%</span></p>
+                <p><span class="bold">Sodium</span> 160mg <span class="right bold">7%</span></p>
+                <p><span class="bold">Total Carbohydrate</span> 37g <span class="right bold">13%</span></p>
+                <p class="indent no-divider">Dietary Fiber 4g</p>
+                <div class="divider"></div>
+                <p class="indent no-divider">Total Sugars 12g</p>
+                <div class="divider dbl-indent"></div>
+                <p class="dbl-indent no-divider">Includes 10g Added Sugars <span class="bold right">20%</span>
+                </p>
+                <div class="divider dbl-indent"></div>
+                <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+                <div class="divider lg"></div>
+                <p class="no-divider">Vitamin D 2mcg <span class="right">10%</span></p>
+                <p>Calcium 260mg <span class="right">20%</span></p>
+                <p>Iron 8mg <span class="right">45%</span></p>
+                <p class="no-divider">Potassium 235mg <span class="right">6%</span></p>
+                <div class="divider md"></div>
+                <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food
+                    contributes
+                    to a
+                    daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
