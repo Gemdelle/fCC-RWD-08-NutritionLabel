@@ -10,20 +10,16 @@ body {
     font-family: 'Berkshire Swash', cursive;
     background-image: url(Images/Background.png);
     background-size: cover;
-    /* color: rgb(159, 119, 159); */
     overflow: hidden;
 }
 
 header h1 {
-   /*  color: rgb(86, 40, 86); */
     text-align: center;
     margin: -4px 0;
     letter-spacing: 0.15px
 }
 
 p {
-    /*     font-family: 'IBM Plex Serif', serif; */
-    /* CHEQUEAR LA FONT */
     margin: 0;
 }
 
@@ -31,52 +27,71 @@ p {
 
 .container {
     display: flex;
-    width: 80%;
-    height: 420px;
-    margin-top: 170px;
-    margin-left: 50px;
+    width: 92vw;
+    height: 34vw;
+    margin: 0 auto;
+    margin-top: 11vw;
 }
 
 .ice-cream {
-    width: 210px;
-    margin: 0px;
+    width: 13.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 90%;
 }
 
 .acid {
     background-image: url(Images/AcidFrame.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .crunchy {
     background-image: url(Images/CrunchyFrame.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sticky {
     background-image: url(Images/StickyFrame.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sweet {
     background-image: url(Images/SweetFrame.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .refreshing {
     background-image: url(Images/RefreshingFrame.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* END Ice Cream Frames */
 /* START Ice Cream Images */
 
+
+.food-image {
+    background-size: cover;
+    margin-top: 50px;
+    height: 14vw;
+    width: 10vw;
+}
+
+.acid-image,
+.crunchy-image,
+.sticky-image,
+.sweet-image,
+.refreshing-image {
+    background-position: center;
+}
+
 .acid-image {
     background-image: url(Images/AcidBase.png);
-    margin-left: -15px;
 }
 
 .crunchy-image {
@@ -89,18 +104,11 @@ p {
 
 .sweet-image {
     background-image: url(Images/SweetBase.png);
+    margin-left: 1.5vw;
 }
 
 .refreshing-image {
     background-image: url(Images/RefreshingBase.png);
-}
-
-.food-image {
-    background-size: cover;
-    margin-top: 50px;
-    height: 180px;
-    width: 110px;
-    margin-right: 20px;
 }
 
 /* END Ice Cream Images */
@@ -109,46 +117,31 @@ p {
 input[type="radio"] {
     cursor: pointer;
     opacity: 0;
+    position: absolute;
+    top: 23vw;
+    width: 5vw;
+    height: 9vw;
+    z-index: 50;
 }
 
 #acid-button {
-    position: absolute;
-    top: 300px;
-    left: 100px;
-    width: 100px;
-    height: 200px;
+    left: 7.5vw;
 }
 
 #crunchy-button {
-    position: absolute;
-    top: 300px;
-    left: 325px;
-    width: 100px;
-    height: 200px;
+    left: 22vw;
 }
 
 #sticky-button {
-    position: absolute;
-    top: 300px;
-    left: 535px;
-    width: 100px;
-    height: 200px;
+    left: 35vw;
 }
 
 #sweet-button {
-    position: absolute;
-    top: 300px;
-    left: 740px;
-    width: 100px;
-    height: 200px;
+    left: 49vw;
 }
 
 #refreshing-button {
-    position: absolute;
-    top: 300px;
-    left: 950px;
-    width: 100px;
-    height: 200px;
+    left: 62vw;
 }
 
 #acid-button:hover~* .acid-image,
@@ -307,12 +300,12 @@ input[type="radio"] {
 .original {
     color: white;
     text-shadow: 0px 0px 14px #df2cff;
-    width: 150px;
+    width: 20vw;
     height: 100%;
     position: absolute;
-    left: 1230px;
-    top: 250px;
-    font-size: 30px;
+    right: 5vw;
+    top: 22vw;
+    font-size: 1.7vw;
     text-align: center;
 }
 
@@ -327,80 +320,80 @@ input[type="radio"] {
 /* START Label 01 */
 
 .label01 header h1 {
-    color: #606647;
+    color: #6f6b90;
 }
 
 .label01 div h1 {
-    color: #c1a569;
+    color: #cf8787;
 }
 
 .label01 .lg,
 .label01 .md {
-    background-color: #CBD5A4;
+    background-color: #cfd5a4;
 }
 
 body .label01 {
-    color: #8c946d;
+    color: #94936d;
 }
 
 /* END Label 01 */
 /* START Label 02 */
 
 .label02 header h1 {
-    color: rgb(56, 12, 126);
+    color: rgb(206, 122, 189);
 }
 
 .label02 div h1 {
-    color: #be98c0;
+    color: rgb(157, 197, 213);
 }
 
 .label02 .lg,
 .label02 .md {
-    background-color: #8DEEB7;
+    background-color: #cdce9c;
 }
 
 body .label02 {
-    color: #769681;
+    color: rgb(128, 45, 112);
 }
 
 /* END Label 02 */
 /* START Label 03 */
 
 .label03 header h1 {
-    color: rgb(86, 40, 86);
+    color: rgb(156, 77, 88);
 }
 
 .label03 div h1 {
-    color: rgb(146, 78, 146);
+    color: rgb(78, 146, 81);
 }
 
 .label03 .lg,
 .label03 .md {
-    background-color: #CBB8EE;
+    background-color: #f3eea6;
 }
 
 body .label03 {
-    color: rgb(159, 119, 159);
+    color: rgb(209, 147, 189);
 }
 
 /* END Label 03 */
 /* START Label 04 */
 
 .label04 header h1 {
-    color: rgb(99, 175, 201);
+    color: rgb(217, 160, 231);
 }
 
 .label04 div h1 {
-    color: rgb(221, 172, 221);
+    color: #c7c686;
 }
 
 .label04 .lg,
 .label04 .md {
-    background-color: #fffec6;
+    background-color: rgb(221, 234, 141);
 }
 
 body .label04 {
-    color: rgb(163, 50, 129);
+    color: rgb(160, 47, 188);
 }
 
 /* END Label 04 */
@@ -411,29 +404,29 @@ body .label04 {
 }
 
 .label05 div h1 {
-    color: rgb(208, 96, 208);
+    color: rgb(208, 96, 96);
 }
 
 .label05 .lg,
 .label05 .md {
-    background-color: #b8e7ee;
+    background-color: #e7c6a3;
 }
 
 body .label05 {
-    color: rgb(119, 156, 159);
+    color: rgb(135, 183, 187);
 }
 
 /* END Label 05 */
 
 .label {
     position: absolute;
-    margin-left: 1150px;
-    margin-top: -460px;
+    margin-left: 76vw;
+    margin-top: -32vw;
     background-color: white;
     border: 4px solid #bebebe;
-    width: 270px;
+    width: 17vw;
     padding: 7px;
-    border-radius: 10px;
+    border-radius: 0.8vw;
 }
 
 .divider {
